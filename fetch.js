@@ -21,7 +21,7 @@ fs.mkdir(path.join(__dirname, 'Result'),{ recursive: true }, (err) => {
 });
 
     //writing to a file post.json inside a Result folder
-    fs.writeFile('Result/Post.json', DataToString, err=>{
+    fs.writeFile('Result/Posts.json', DataToString, err=>{
         if(err){
         console.log("Error encountered while writing file", err)
     } else{
